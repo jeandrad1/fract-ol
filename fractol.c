@@ -2,12 +2,12 @@
 
 bool    get_formula(char *str)
 {
-    if (ft_strcmp(str, "mandelbrot") == 0)
-        return (1);
+//    if (ft_strcmp(str, "mandelbrot") == 0)
+//        return (1);
     if (ft_strcmp(str, "julia") == 0)
-        return (2);
-    if (ft_strcmp(str, "burning_ship") == 0)
-        return (3);
+        return (1);
+//    if (ft_strcmp(str, "burning_ship") == 0)
+//        return (1);
     return (0);
 }
 
