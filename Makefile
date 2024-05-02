@@ -6,6 +6,8 @@ MLX42		=	-lmlx -framework OpenGL -framework AppKit
 				
 LIBFT		=	libft/libft.a
 
+MLX42		=	MLX42/libmlx42.a
+
 OBJ			=	$(SRC:.c=.o)
 BONUS_OBJ	=	$(BONUS_SRC:.c=.o) 
 
