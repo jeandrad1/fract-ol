@@ -1,51 +1,31 @@
-NAME		=	fractol
+CC = gcc
 
-SRC			=	fracto.c main.c
+CFLAGS = -Wall -Wextra -Werror
 
-MLX42		=	-lmlx -framework OpenGL -framework AppKit
-				
-LIBFT		=	libft/libft.a
+SRCS = main.c fractol.c
 
-MLX42		=	MLX42/libmlx42.a
+OBJS = $(SRCS:.c=.o)
 
-OBJ			=	$(SRC:.c=.o)
-BONUS_OBJ	=	$(BONUS_SRC:.c=.o) 
+NAME = fractol
 
-CC			=	gcc
+MLX42_PATH = /path/to/mlx42
 
-RM			=	rm -f
+MLX42_FLAGS = -L$(MLX42_PATH) -lmlx42 -lm -lXext -lX11
 
-CFLAGS		=	-Wall -Wextra -Werror -g
+all: $(NAME)
 
-$(NAME):	$(OBJ)
-			@make -s -C ./libft
-			@make -s -C ./MLX42
-			@$(CC) $(CFLAGS) -o $(NAME) $(OBJ) $(LIBFT) $(MLX42)
-			@echo "fractol compilation SUCCESS"
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
-all:		$(NAME)
-
-$(MLX42):
-			@make -s -C ./mlx42
-			@echo "minilibx compilation SUCCESS"
-
-$(NAME):	$(OBJ)
-			@make -s -C ./libft
-			@make -s -C ./MLX42
-			@$(CC) $(CFLAGS) -o $(NAME) $(OBJ) $(LIBFT) $(MLX42)
-			@echo "fractol compilation SUCCESS"
+$(NAME): $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) $(MLX42_FLAGS) -o $(NAME)
 
 clean:
-			@make -s clean -C libft
-			@make -s clean -C mlx42
-			@${RM} $(OBJ)
+	rm -f $(OBJS)
 
-fclean: 	clean
-			@make -s fclean -C libft
-			@make -s fclean -C mlx42
-			@${RM} $(NAME) ${BONUS_NAME} ${OBJ} ${BONUS_OBJ}
-			@echo "CLEANING SUCCESS"
+fclean: clean
+	rm -f $(NAME)
 
-re:			fclean bonus
+re: fclean all
 
-.PHONY:		all clean fclean re
+.PHONY: all clean fclean re
