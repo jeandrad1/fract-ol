@@ -1,6 +1,7 @@
 #ifndef FRACTOL_H
 # define FRACTOL_H
 
+# include <mlx.h>
 # include <math.h>
 # include <stdbool.h>
 # include <stdlib.h>
@@ -38,14 +39,11 @@ typedef struct		s_fractol
 	t_complex		factor;
 	t_complex		c;
 	t_complex		k;
+	t_bool			is_julia_fixed;
 	int				start_line;
 	int				finish_line;
 	int				color_shift;
 	int				(*formula)(struct s_fractol *fractol);
+	t_bool			is_help;
 }					t_fractol;
 
-//Para pruebas del makefile
-
-int32_t main(void);
-
-#endif
