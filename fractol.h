@@ -27,20 +27,20 @@
 
 typedef struct s_complex
 {
-    double	re;
-    double	im;
+	double	re;
+	double	im;
 }	t_complex;
 
 typedef struct image
 {
-    void	*img;
-    char	*addr;
-    int		bpp;
-    int		line_length;
-    int		endin;
+	void	*img;
+	char	*addr;
+	int		bpp;
+	int		line_length;
+	int		endin;
 }	t_image;
 
-typedef struct		s_fractol
+typedef struct s_fractol
 {
 	void			*mlx;
 	void			*window;
