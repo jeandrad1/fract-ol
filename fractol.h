@@ -58,3 +58,5 @@ typedef struct		s_fractol
 	int				(*formula)(struct s_fractol *fractol);
 	t_bool			is_help;
 }					t_fractol;
+
+#endif
