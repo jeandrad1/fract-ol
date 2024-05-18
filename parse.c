@@ -1,3 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parse.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/18 11:51:40 by jeandrad          #+#    #+#             */
+/*   Updated: 2024/05/18 11:51:40 by jeandrad         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "fractol.h"
+
 static void	set_fractal(t_fractol *f, int ac, char **av);
 static void	set_julia_constants(t_fractol *f, int ac, char **av);
 
