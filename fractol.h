@@ -13,7 +13,6 @@
 #ifndef FRACTOL_H
 # define FRACTOL_H
 
-# include <mlx.h>
 # include <math.h>
 # include <stdbool.h>
 # include <stdlib.h>
@@ -21,6 +20,7 @@
 # include <string.h>
 # include <unistd.h>
 # include "libft.h"
+# include "MLX42/include/MLX42/MLX42.h"
 
 # define WIDTH 800
 # define HEIGHT 800
@@ -58,4 +58,3 @@ typedef struct		s_fractol
 	int				(*formula)(struct s_fractol *fractol);
 	t_bool			is_help;
 }					t_fractol;
-
