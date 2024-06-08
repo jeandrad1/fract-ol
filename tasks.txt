@@ -1,8 +1,8 @@
 Phase 1. Julia.
 
-	-Control Errors.
-	-struct fractal with all the values
-	-Windows initialization.
+	X -Control Errors. 
+	X -struct fractal with all the values
+	X -Windows initialization.
 	-Windows controls
 	-Simple Julia 
 	exit.

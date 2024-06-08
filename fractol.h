@@ -10,40 +10,75 @@
 # include <unistd.h>
 # include "libft.h"
 
-# define WIDTH 800
-# define HEIGHT 800
+# ifndef WIDTH
+#  define WIDTH 1000
+# endif
+
+# ifndef HEIGHT
+#  define HEIGHT 1000
+# endif
+
+# ifndef MAX_ITERATIONS
+#  define MAX_ITERATIONS 100
+# endif
 
 typedef struct s_complex
 {
     double	re;
     double	im;
 }	t_complex;
-
-typedef struct image
+typedef struct s_img
 {
-    void	*img;
-    char	*addr;
-    int		bpp;
-    int		line_length;
-    int		endin;
-}	t_image;
+	mlx_t		*mlx;
+	mlx_image_t	*img;
+}	t_img;
 
-typedef struct		s_fractol
+typedef struct s_color_scheme
 {
-	void			*mlx;
-	void			*window;
-	t_image			*image;
-	int				max_iteration;
-	t_complex		min;
-	t_complex		max;
-	t_complex		factor;
-	t_complex		c;
-	t_complex		k;
-	t_bool			is_julia_fixed;
-	int				start_line;
-	int				finish_line;
-	int				color_shift;
-	int				(*formula)(struct s_fractol *fractol);
-	t_bool			is_help;
-}					t_fractol;
+	int	shift;
+	int	r_set;
+	int	g_set;
+	int	b_set;
+	int	hue;
+	int	saturation;
+	int	brightness;
+	int	contrast;
+	int	c;
+	int	x;
+	int	m;
+	int	r;
+	int	g;
+	int	b;
+	int	palette;
+}	t_color_scheme;
+
+
+typedef struct s_fractol
+{
+	t_img			img;
+	char			*name;
+	int				x;
+	int				y;
+	double			j_ci;
+	double			j_cr;
+	double			m_zi;
+	double			m_zr;
+	double			max_i;
+	double			max_r;
+	double			min_r;
+	double			min_i;
+	double			pi;
+	double			pr;
+	int				error;
+	int				n;
+	double			zoom_factor;
+	t_color_scheme	cs;
+}	t_fractol;
+
+double	ft_atof(char *str);
+int	get_psychedelic_color(t_fractol *f)
+void	draw_fractal(t_fractol	*f)
+static void	set_julia_constants(t_fractol *f, int ac, char **av)
+void	handle_keyboard(mlx_key_data_t key, void *param)
+int	julia_set(t_fractol *f)
 
