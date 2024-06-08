@@ -1,6 +1,6 @@
 NAME		=	fractol
 
-SRC			=	fracto.c main.c
+SRC			=	src/*.c
 
 MLX42_FLAGS	=	-lmlx -framework OpenGL -framework AppKit
 				
@@ -8,11 +8,13 @@ LIBFT		=	libft/libft.a
 
 MLX42		=	MLX42/libmlx42.a
 
-CC			=	gcc
+CC			=	clang
 
 RM			=	rm -f
 
-CFLAGS		=	-Wall -Wextra -Werror -g
+CFLAGS		=	-Wall -Wextra -Werror
+
+OBJ			=	$(SRC:.c=.o)
 
 $(MLX42):
 			@make -s -C ./mlx42
@@ -37,6 +39,6 @@ fclean: 	clean
 			@${RM} $(NAME) ${OBJ}
 			@echo "CLEANING SUCCESS"
 
-re:			fclean bonus
+re:			fclean all
 
 .PHONY:		all clean fclean re
