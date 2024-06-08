@@ -6,6 +6,7 @@
 # include <stdbool.h>
 # include <stdlib.h>
 # include <stdio.h>
+# include <stdint.h>
 # include <string.h>
 # include <unistd.h>
 # include "libft.h"
@@ -22,11 +23,28 @@
 #  define MAX_ITERATIONS 100
 # endif
 
-typedef struct s_complex
+typedef struct s_fractol
 {
-    double	re;
-    double	im;
-}	t_complex;
+	t_img			img;
+	char			*name;
+	int				x;
+	int				y;
+	double			j_ci;
+	double			j_cr;
+	double			m_zi;
+	double			m_zr;
+	double			max_i;
+	double			max_r;
+	double			min_r;
+	double			min_i;
+	double			pi;
+	double			pr;
+	int				error;
+	int				n;
+	double			zoom_factor;
+	t_color_scheme	cs;
+}	t_fractol;
+
 typedef struct s_img
 {
 	mlx_t		*mlx;
@@ -75,10 +93,19 @@ typedef struct s_fractol
 	t_color_scheme	cs;
 }	t_fractol;
 
-double	ft_atof(char *str);
-int	get_psychedelic_color(t_fractol *f)
-void	draw_fractal(t_fractol	*f)
-static void	set_julia_constants(t_fractol *f, int ac, char **av)
-void	handle_keyboard(mlx_key_data_t key, void *param)
-int	julia_set(t_fractol *f)
+void		draw_fractal(t_fractol	*f);
+int			julia_set(t_fractol *f);
+void		init(t_fractol *fractol);
+double		ft_atof(char *str);
+void		help_msg(void);
+void		parse_args(int argc, char **argv, t_fractol *fractol);
+void		handle_mouse(double xdelta, double ydelta, void *param);
+void		handel_keyboard(mlx_key_data_t key, void *param);
+void		zoom(t_fractol *fractol, int x, int y, double zoom_factor);
+void		set_screen_size(t_fractol *f);
+int			get_psychedelic_color(t_fractol *f);
+int			tricorn_set(t_fractol *f);
+void		move(t_fractol *f, double distance, char direction);
+int			shift_color(t_color_scheme *cs);
 
+#endif
