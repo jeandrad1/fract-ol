@@ -6,11 +6,11 @@
 /*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:09:28 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/08 11:09:31 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/08 15:19:27 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 static int	is_space(int c)
 {

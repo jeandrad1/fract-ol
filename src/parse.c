@@ -6,9 +6,11 @@
 /*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:09:38 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/08 11:09:40 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/08 15:19:17 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../includes/fractol.h"
 
 static void	set_fractal(t_fractol *f, int ac, char **av);
 static void	set_julia_constants(t_fractol *f, int ac, char **av);

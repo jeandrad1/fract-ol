@@ -6,11 +6,9 @@
 /*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:10:15 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/08 11:10:17 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/08 15:18:47 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "fractol.h"
 
 #include "../includes/fractol.h"
 

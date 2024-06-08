@@ -6,11 +6,11 @@
 /*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:19 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/08 11:11:21 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/08 15:17:52 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/fractol.h"
+#include "../includes/fractol.h"
 
 static void	reset(t_color_scheme *cs)
 {

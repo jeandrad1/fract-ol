@@ -3,20 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_int.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 16:34:21 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/01/10 12:52:04 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/08 17:51:40 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 int	ft_print_int(int n)
 {
 	long int	nb;
-	int count;
+	int			count;
 
+	count = 0;
 	nb = n;
 	if (nb < 0)
 	{
@@ -31,4 +32,5 @@ int	ft_print_int(int n)
 	}
 	else
 		ft_putchar(nb + '0');
+	return (count);
 }

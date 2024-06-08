@@ -6,11 +6,11 @@
 /*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:10:00 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/08 11:10:02 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/08 15:19:03 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 static void	exit_mlx(t_img *img)
 {

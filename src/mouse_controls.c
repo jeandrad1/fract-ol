@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mous_controls.c                                    :+:      :+:    :+:   */
+/*   mouse_controls.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:09:48 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/08 11:09:50 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/08 15:19:07 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/fractol.h"
+#include "../includes/fractol.h"
 
 void	handle_mouse(double xdelta, double ydelta, void *param)
 {

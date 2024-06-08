@@ -6,11 +6,11 @@
 /*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:06 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/08 11:11:08 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/08 17:06:19 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 void	draw_fractal(t_fractol	*f)
 {
@@ -26,12 +26,8 @@ void	draw_fractal(t_fractol	*f)
 		{
 			f->pr = f->min_r + ((double)f->x * (f->max_r - f->min_r)) / WIDTH;
 			f->pi = f->max_i + (double)f->y * (f->min_i - f->max_i) / HEIGHT;
-			if (ft_strncmp("M", f->name, 1) == 0)
-				f->n = mandelbrot_set(f);
-			else if (ft_strncmp("J", f->name, 1) == 0)
+			if (ft_strncmp("J", f->name, 1) == 0)
 				f->n = julia_set(f);
-			else if (ft_strncmp("T", f->name, 1) == 0)
-				f->n = tricorn_set(f);
 			else
 				f->error = -1;
 			mlx_put_pixel(f->img.img, f->x, f->y, get_psychedelic_color(f));

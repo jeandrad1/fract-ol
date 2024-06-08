@@ -6,11 +6,11 @@
 /*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:00 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/08 11:11:02 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/08 17:53:26 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 int	main(int argc, char **argv)
 {
@@ -32,7 +32,7 @@ int	main(int argc, char **argv)
 	init(&fractol);
 	draw_fractal(&fractol);
 	mlx_scroll_hook(img.mlx, &handle_mouse, &fractol);
-	mlx_key_hook(img.mlx, &handel_keyboard, &fractol);
+	mlx_key_hook(img.mlx, &handle_keyboard, &fractol);
 	mlx_loop(fractol.img.mlx);
 	mlx_terminate(fractol.img.mlx);
 	return (EXIT_SUCCESS);

@@ -6,11 +6,11 @@
 /*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:25 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/08 11:11:27 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/08 15:17:43 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/fractol.h"
+#include "../includes/fractol.h"
 
 void	zoom(t_fractol *fractol, int x, int y, double zoom_factor)
 {

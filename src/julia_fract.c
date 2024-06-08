@@ -6,9 +6,11 @@
 /*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:10:06 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/08 11:10:08 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/08 15:18:55 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../includes/fractol.h"
 
 int	julia_set(t_fractol *f)
 {
