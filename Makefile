@@ -1,5 +1,7 @@
 NAME = fractol
 
+NAME_BONUS = fractol_bonus
+
 CC = clang
 
 FLAGS = -g -Wall -Werror -Wextra -Iinclude
@@ -27,17 +29,39 @@ FILES =	change_zoom\
 		parse\
 		utils\
 
+BONUS_FILES =	change_zoom_bonus\
+		color_change_bonus\
+		color_bonus\
+		draw_bonus\
+		fractol_bonus\
+		info_bonus\
+		init_bonus\
+		julia_fract_bonus\
+		key_controls_bonus\
+		mouse_controls_bonus\
+		parse_bonus\
+		utils_bonus\
+
 SRCS_DIR = ./src/
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
 
 OBJS_DIR = ./src/
 OBJS = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(FILES)))
 
+BNS_DIR = ./bonus/
+SRCS_BNS = $(addprefix $(BNS_DIR), $(addsuffix .c, $(BONUS_FILES)))
+
+BNS_OBJS_DIR = ./bonus/
+OBJS_BONUS = $(addprefix $(BNS_OBJS_DIR), $(addsuffix .o, $(BONUS_FILES)))
+
 %.o: %.c
 	@$(CC) $(FLAGS) -c $< -o $@
 
 $(NAME): $(LIBFT) $(MLX) $(OBJS)
 	@$(CC) $(FLAGS) $(GLFW) $(OBJS) $(LIBFT) $(MLX) -o $(NAME)
+
+$(NAME_BONUS): $(LIBFT) $(MLX) $(OBJS_BONUS)
+	@$(CC) $(FLAGS) $(GLFW) $(OBJS_BONUS) $(LIBFT) $(MLX) -o $(NAME_BONUS)
 
 $(LIBFT):
 	make -C $(LIBFT_PATH) all
@@ -47,13 +71,15 @@ $(MLX):
 
 all: $(NAME)
 
+bonus: $(NAME_BONUS)
+
 clean: 
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(OBJS_BONUS)
 	make -C $(LIBFT_PATH) clean
 	make -C $(MLX_PATH) clean
 
 fclean: clean
-	rm -f $(NAME)
+	rm -f $(NAME) $(NAME_BONUS)
 	make -C $(LIBFT_PATH) fclean
 	make -C $(MLX_PATH) fclean
 
