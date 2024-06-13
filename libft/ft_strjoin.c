@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/16 10:22:55 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/16 11:47:43 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/13 18:06:23 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,9 @@
 static void	ft_strcat(char *dst, const char *src)
 {
 	size_t	dst_len;
-//	size_t	src_len;
 	size_t	i;
 
 	dst_len = ft_strlen(dst);
-//	src_len = ft_strlen(src);
 	i = 0;
 	while (src[i] != '\0')
 	{

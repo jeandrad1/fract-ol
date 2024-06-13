@@ -6,28 +6,11 @@
 /*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 16:35:14 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/08 17:40:21 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/13 18:07:19 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
-int	ft_print_pointer(void *p)
-{
-	int	count;
-	int	aux;
-
-	aux = p;
-	ft_print_str("0x");
-	count = 2;
-	if (aux >= 16)
-		count += ft_print_pointer(aux / 16);
-	ft_putchar("0123456789abcdef"[aux % 16]);
-	count++;
-	return (count);
-}
-*/
 
 static long long int	ft_ptr_len(unsigned long long num)
 {
@@ -42,7 +25,7 @@ static long long int	ft_ptr_len(unsigned long long num)
 	return (len);
 }
 
-static void	ft_put_ptr(unsigned long long  num)
+static void	ft_put_ptr(unsigned long long num)
 {
 	if (num >= 16)
 	{
@@ -61,7 +44,7 @@ static void	ft_put_ptr(unsigned long long  num)
 int	ft_print_ptr(unsigned long long ptr)
 {
 	unsigned long long	print_length;
-	
+
 	print_length = 0;
 	if (ptr < 0)
 		return (-1);

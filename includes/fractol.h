@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:10:39 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/08 17:54:29 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/13 18:07:42 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,6 @@ typedef struct s_color_scheme
 	int	b;
 	int	palette;
 }	t_color_scheme;
-
 
 typedef struct s_img
 {
