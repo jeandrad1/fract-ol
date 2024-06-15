@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:00 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/11 19:53:15 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/15 16:39:28 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int	main(int argc, char **argv)
 	parse_args(argc, argv, &fractol);
 	if (fractol.error == -1)
 	{
+		mlx_terminate(fractol.img.mlx);
 		help_msg();
 		return (1);
 	}
@@ -35,5 +36,5 @@ int	main(int argc, char **argv)
 	mlx_key_hook(img.mlx, &handle_keyboard, &fractol);
 	mlx_loop(fractol.img.mlx);
 	mlx_terminate(fractol.img.mlx);
-	return (EXIT_SUCCESS);
+	return (0);
 }

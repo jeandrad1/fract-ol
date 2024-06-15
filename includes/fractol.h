@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:10:39 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/13 18:07:42 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/15 13:19:07 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,6 +85,7 @@ typedef struct s_fractol
 
 void		draw_fractal(t_fractol	*f);
 int			julia_set(t_fractol *f);
+int			mandelbrot_set(t_fractol *f);
 void		init(t_fractol *fractol);
 double		ft_atof(char *str);
 void		help_msg(void);

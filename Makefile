@@ -4,9 +4,9 @@ NAME_BONUS = fractol_bonus
 
 CC = clang
 
-FLAGS = -g -Wall -Werror -Wextra -Iinclude
+FLAGS = -g -Wall -Werror -Wextra -Iinclude -fsanitize=address
 
-GLFW = -ldl -lglfw -pthread -lm
+GLFW = -ldl -lglfw -pthread -lm 
 
 LIBFT_PATH = ./libft
 
@@ -24,6 +24,7 @@ FILES =	change_zoom\
 		info\
 		init\
 		julia_fract\
+		mandelbrot_fract\
 		key_controls\
 		mouse_controls\
 		parse\
