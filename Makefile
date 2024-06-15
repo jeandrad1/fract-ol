@@ -38,6 +38,7 @@ BONUS_FILES =	change_zoom_bonus\
 		info_bonus\
 		init_bonus\
 		julia_fract_bonus\
+		mandelbrot_fract_bonus\
 		key_controls_bonus\
 		mouse_controls_bonus\
 		parse_bonus\
