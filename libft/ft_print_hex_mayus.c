@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_hex_mayus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 16:31:33 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/08 17:39:44 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/22 11:24:46 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

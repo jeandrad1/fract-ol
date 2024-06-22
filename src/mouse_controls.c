@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mouse_controls.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:09:48 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/11 19:53:33 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/22 11:23:41 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

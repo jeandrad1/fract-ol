@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   fractol.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:00 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/15 16:39:28 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/22 11:17:26 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include "../includes/fractol.h"
 

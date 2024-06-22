@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_unsigned_int.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 16:36:43 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/08 17:40:29 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/22 11:25:02 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
