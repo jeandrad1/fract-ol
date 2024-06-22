@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   dragon_fract_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 17:41:30 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:02:12 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/22 11:43:30 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

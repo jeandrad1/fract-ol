@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   julia_fract_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:10:06 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/11 19:52:11 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/22 11:43:47 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

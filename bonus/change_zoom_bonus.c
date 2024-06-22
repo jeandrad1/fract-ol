@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   change_zoom_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:25 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/11 19:52:35 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/22 11:43:19 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

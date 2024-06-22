@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   color_change_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:19 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/11 19:52:28 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/22 11:43:27 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

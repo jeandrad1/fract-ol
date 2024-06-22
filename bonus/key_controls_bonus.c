@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   key_controls_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:10:00 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/11 19:52:09 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/22 11:45:38 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
