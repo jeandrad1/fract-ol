@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:10:15 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/23 14:27:21 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/23 18:40:39 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ void	init(t_fractol *fractol)
 	fractol->m_zr = 0;
 	fractol->error = 0;
 	fractol->n = 0;
-	fractol->zoom_factor = 1.48;
+	fractol->zoom_factor = 1.5;
 	set_screen_size(fractol);
 	init_cs(&fractol->cs);
 }
