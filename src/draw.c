@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   draw.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeandrad < jeandrad@student.42malaga.co    +#+  +:+       +#+        */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:06 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:16:59 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/23 14:31:38 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ void	draw_fractal(t_fractol	*f)
 		{
 			f->pr = f->min_r + ((double)f->x * (f->max_r - f->min_r)) / WIDTH;
 			f->pi = f->max_i + (double)f->y * (f->min_i - f->max_i) / HEIGHT;
-			if (ft_strncmp("J", f->name, 1) == 0)
+			if (ft_strncmp("Julia", f->name, 5) == 0)
 				f->n = julia_set(f);
-			else if (ft_strncmp("M", f->name, 1) == 0)
+			else if (ft_strncmp("Mandelbrot", f->name, 10) == 0)
 				f->n = mandelbrot_set(f);
 			else
 				f->error = -1;

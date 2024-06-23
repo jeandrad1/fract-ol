@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:10:15 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:23:30 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/23 14:27:21 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	set_screen_size(t_fractol *f)
 {
-	if (ft_strncmp("J", f->name, 1) == 0)
+	if (ft_strncmp("Julia", f->name, 5) == 0)
 	{
 		f->min_r = -2.0;
 		f->max_r = 2.0;

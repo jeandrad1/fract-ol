@@ -29,6 +29,7 @@ FILES =	change_zoom\
 		mouse_controls\
 		parse\
 		utils\
+		exit_error\
 
 BONUS_FILES =	change_zoom_bonus\
 		color_change_bonus\

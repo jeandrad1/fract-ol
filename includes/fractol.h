@@ -6,12 +6,11 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:10:39 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:43:09 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/23 14:15:43 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FRACTOL_H
-
 # define FRACTOL_H
 
 # include <math.h>
@@ -35,6 +34,13 @@
 # ifndef MAX_ITERATIONS
 #  define MAX_ITERATIONS 100
 # endif
+
+enum	e_error
+{
+	NOTHING = 0,
+	ARGS = 1,
+	MLX_FAIL = 2
+};
 
 typedef struct s_color_scheme
 {
@@ -98,5 +104,7 @@ int			get_psychedelic_color(t_fractol *f);
 int			tricorn_set(t_fractol *f);
 void		move(t_fractol *f, double distance, char direction);
 int			shift_color(t_color_scheme *cs);
+void		free_fractol(t_fractol *fractol);
+int			exit_error(t_fractol *fractol, int error, int is_exit);
 
 #endif
