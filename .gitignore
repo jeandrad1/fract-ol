@@ -5,3 +5,4 @@ fractol
 *.a
 fractol_bonus
 .vscode
+leaks

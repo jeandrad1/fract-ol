@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:09:38 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/23 15:44:13 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/23 17:27:59 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static void	set_mandelbrot_constants(t_fractol *f, int ac, char **av)
 	{
 		f->m_zr = ft_atof(av[2]);
 		f->m_zi = ft_atof(av[3]);
-		if ((f->m_zr * f->m_zr + f->m_zi * f->m_zi) > 4.0)
+		if ((pow(f->m_zr, 2) + pow(f->m_zi, 2)) > 4.0)
 			f->error = -1;
 	}
 	else
