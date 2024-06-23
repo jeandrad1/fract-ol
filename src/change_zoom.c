@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:25 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:23:13 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/23 18:24:41 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	zoom(t_fractol *fractol, int x, int y, double zoom_factor)
 	fractol->min_i = y_math - (1 - (double)y / HEIGHT) * new_y_range;
 	fractol->max_i = fractol->min_i + new_y_range;
 }
-
+/*
 void	move(t_fractol *f, double distance, char direction)
 {
 	double	center_r;
@@ -59,3 +59,4 @@ void	move(t_fractol *f, double distance, char direction)
 		f->max_i -= center_i * distance;
 	}
 }
+*/
