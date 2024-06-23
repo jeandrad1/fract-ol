@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:10:00 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:23:37 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/23 18:11:36 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,16 +30,6 @@ void	handle_keyboard(mlx_key_data_t key, void *param)
 		exit_mlx(&fractol->img);
 		return ;
 	}
-	else if (key.key == MLX_KEY_UP && key.action == MLX_PRESS)
-		move(fractol, 0.2, 'U');
-	else if (key.key == MLX_KEY_DOWN && key.action == MLX_PRESS)
-		move(fractol, 0.2, 'D');
-	else if (key.key == MLX_KEY_LEFT && key.action == MLX_PRESS)
-		move(fractol, 0.2, 'L');
-	else if (key.key == MLX_KEY_RIGHT && key.action == MLX_PRESS)
-		move(fractol, 0.2, 'R');
-	else if (key.key == MLX_KEY_SPACE && key.action == MLX_PRESS)
-		shift_color(&fractol->cs);
 	else
 		return ;
 	draw_fractal(fractol);

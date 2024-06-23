@@ -17,7 +17,6 @@ MLX_PATH = ./MLX42
 MLX = $(MLX_PATH)/libmlx42.a
 
 FILES =	change_zoom\
-		color_change\
 		color\
 		draw\
 		fractol\
