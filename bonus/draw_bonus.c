@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:06 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:43:33 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/24 18:13:47 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,10 @@ void	draw_fractal(t_fractol	*f)
 			f->pi = f->max_i + (double)f->y * (f->min_i - f->max_i) / HEIGHT;
 			if (ft_strncmp("J", f->name, 1) == 0)
 				f->n = julia_set(f);
-			else if(ft_strncmp("M", f->name, 1) == 0)
+			else if (ft_strncmp("M", f->name, 1) == 0)
 				f->n = mandelbrot_set(f);
+			else if (ft_strncmp("T", f->name, 1) == 0)
+				f->n = tricorn_set(f);
 			else
 				f->error = -1;
 			mlx_put_pixel(f->img.img, f->x, f->y, get_psychedelic_color(f));

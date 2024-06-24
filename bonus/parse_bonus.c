@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:09:38 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:46:15 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/24 18:12:21 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,9 @@ void	parse_args(int argc, char **argv, t_fractol *fractol)
 
 static void	set_fractal(t_fractol *f, int ac, char **av)
 {
-	if (ft_strncmp("M", av[1], 1) == 0)
+	if (ft_strncmp("Mandelbrot", av[1], 1) == 0)
 		f->name = "M";
-	else if (ft_strncmp("J", av[1], 1) == 0)
+	else if (ft_strncmp("Julia", av[1], 1) == 0)
 	{
 		f->name = "J";
 		if (ac > 2)
@@ -40,7 +40,7 @@ static void	set_fractal(t_fractol *f, int ac, char **av)
 			f->j_cr = -0.766667;
 		}
 	}
-	else if (ft_strncmp("T", av[1], 1) == 0)
+	else if (ft_strncmp("Tricorn", av[1], 1) == 0)
 		f->name = "T";
 	else
 		f->error = -1;

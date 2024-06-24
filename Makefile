@@ -39,10 +39,12 @@ BONUS_FILES =	change_zoom_bonus\
 		init_bonus\
 		julia_fract_bonus\
 		mandelbrot_fract_bonus\
+		tricorn_fract_bonus\
 		key_controls_bonus\
 		mouse_controls_bonus\
 		parse_bonus\
 		utils_bonus\
+		exit_error_bonus\
 
 SRCS_DIR = ./src/
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
