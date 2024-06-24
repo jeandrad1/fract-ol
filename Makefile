@@ -4,7 +4,7 @@ NAME_BONUS = fractol_bonus
 
 CC = clang
 
-FLAGS = -g -Wall -Werror -Wextra -Iinclude -fsanitize=address
+FLAGS = -g -Wall -Werror -Wextra -Iinclude #-fsanitize=address
 
 GLFW = -ldl -lglfw -pthread -lm 
 
