@@ -6,12 +6,30 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:09:38 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/29 13:35:32 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 13:37:27 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
+// Function to set the julia constants
+// It uses the arguments to set the julia constants
+// If the arguments are not valid, it sets the error to -1
+// If there are no arguments, it sets the default values
+static void	set_julia_constants(t_fractol *f, int ac, char **av)
+{
+	if (ac < 5 && ac != 3)
+	{
+		f->j_cr = ft_atof(av[2]);
+		if (f->j_ci == -42 || f->j_ci > 2.0 || f->j_ci < -2.0)
+			f->error = -1;
+		f->j_ci = ft_atof(av[3]);
+		if (f->j_cr == -42 || f->j_ci > 2.0 || f->j_ci < -2.0)
+			f->error = -1;
+	}
+	else
+		f->error = -1;
+}
 // Function to set the fractal
 // It set uses the argument to set the fractal name and constants
 // If the name is not valid, it sets the error to -1
@@ -32,25 +50,6 @@ static void	set_fractal(t_fractol *f, int ac, char **av)
 	}
 	else if (ft_strncmp("Tricorn", av[1], 1) == 0)
 		f->name = "T";
-	else
-		f->error = -1;
-}
-
-// Function to set the julia constants
-// It uses the arguments to set the julia constants
-// If the arguments are not valid, it sets the error to -1
-// If there are no arguments, it sets the default values
-static void	set_julia_constants(t_fractol *f, int ac, char **av)
-{
-	if (ac < 5 && ac != 3)
-	{
-		f->j_cr = ft_atof(av[2]);
-		if (f->j_ci == -42 || f->j_ci > 2.0 || f->j_ci < -2.0)
-			f->error = -1;
-		f->j_ci = ft_atof(av[3]);
-		if (f->j_cr == -42 || f->j_ci > 2.0 || f->j_ci < -2.0)
-			f->error = -1;
-	}
 	else
 		f->error = -1;
 }
