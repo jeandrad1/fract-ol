@@ -16,22 +16,27 @@ SRCS = ft_isalnum.c ft_isalpha.c ft_isdigit.c ft_isascii.c ft_isprint.c ft_strle
 # Object files
 OBJS = $(SRCS:.c=.o)
 
+# Compile rule
+%.o: %.c
+	@$(CC) $(CFLAGS) -c $< -o $@
+
 # Output library
 NAME = libft.a
 
 # Build rule
 all: $(NAME)
+	@echo "libft.a created"
 
 $(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+	@ar rcs $(NAME) $(OBJS)
 
 # Clean rule
 clean:
-	rm -f $(OBJS)
+	@rm -f $(OBJS)
 
 # Fclean rule
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 # Re rule
 re: fclean all

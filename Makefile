@@ -63,29 +63,31 @@ OBJS_BONUS = $(addprefix $(BNS_OBJS_DIR), $(addsuffix .o, $(BONUS_FILES)))
 
 $(NAME): $(LIBFT) $(MLX) $(OBJS)
 	@$(CC) $(FLAGS) $(GLFW) $(OBJS) $(LIBFT) $(MLX) -o $(NAME)
+	@echo "Fractol created"
 
 $(NAME_BONUS): $(LIBFT) $(MLX) $(OBJS_BONUS)
 	@$(CC) $(FLAGS) $(GLFW) $(OBJS_BONUS) $(LIBFT) $(MLX) -o $(NAME_BONUS)
+	@echo "Fractol_bonus created"
 
 $(LIBFT):
-	make -C $(LIBFT_PATH) all
+	@make -C $(LIBFT_PATH) all
 
 $(MLX):
-	make -C $(MLX_PATH) all
+	@make -C $(MLX_PATH) all
 
 all: $(NAME)
-
+	
 bonus: $(NAME_BONUS)
 
 clean: 
-	rm -f $(OBJS) $(OBJS_BONUS)
-	make -C $(LIBFT_PATH) clean
-	make -C $(MLX_PATH) clean
+	@rm -f $(OBJS) $(OBJS_BONUS)
+	@make -C $(LIBFT_PATH) clean
+	@make -C $(MLX_PATH) clean
 
 fclean: clean
-	rm -f $(NAME) $(NAME_BONUS)
-	make -C $(LIBFT_PATH) fclean
-	make -C $(MLX_PATH) fclean
+	@rm -f $(NAME) $(NAME_BONUS)
+	@make -C $(LIBFT_PATH) fclean
+	@make -C $(MLX_PATH) fclean
 
 re: fclean all
 
