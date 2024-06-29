@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:09:38 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/23 17:27:59 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 12:27:06 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,10 @@ static void	set_julia_constants(t_fractol *f, int ac, char **av)
 	{
 		temp_j_cr = ft_atof(av[2]);
 		temp_j_ci = ft_atof(av[3]);
-
 		if (temp_j_cr == -42 || temp_j_cr > 2.0 || temp_j_cr < -2.0)
 			f->error = -1;
 		else
 			f->j_cr = temp_j_cr;
-
 		if (temp_j_ci == -42 || temp_j_ci > 2.0 || temp_j_ci < -2.0)
 			f->error = -1;
 		else
@@ -34,7 +32,6 @@ static void	set_julia_constants(t_fractol *f, int ac, char **av)
 	}
 	else
 		f->error = -1;
-
 }
 
 static void	set_mandelbrot_constants(t_fractol *f, int ac, char **av)
@@ -49,7 +46,6 @@ static void	set_mandelbrot_constants(t_fractol *f, int ac, char **av)
 	else
 		f->error = -1;
 }
-
 
 static void	set_fractal(t_fractol *f, int ac, char **av)
 {

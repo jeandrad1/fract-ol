@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:10:24 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/29 12:07:22 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 12:27:42 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,4 @@ void	help_msg(void)
 	ft_printf("\t\t./fractol Julia -0.4 0.6\n");
 	ft_printf("\t\t./fractol Julia -1.476 0.0\n");
 	ft_printf("\t\t./fractol Julia 0.3 -0.01\n\n");
-
 }

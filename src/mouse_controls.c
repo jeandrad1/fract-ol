@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:09:48 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/24 19:46:02 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 12:27:23 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 void	handle_mouse(double xdelta, double ydelta, void *param)
 {
 	t_fractol	*fractol;
-	const int		zoom_x = 500;
-	const int		zoom_y = 500;
+	const int	zoom_x = 500;
+	const int	zoom_y = 500;
 
 	(void)xdelta;
 	fractol = (t_fractol *)param;
