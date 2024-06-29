@@ -6,12 +6,16 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:25 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/24 19:46:32 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 13:07:03 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
+// Function to zoom in or out
+// It receives the fractol structure, the x and y values, the zoom factor
+// It calculates the new values
+// It sets the new values 
 void	zoom(t_fractol *fractol, int x, int y, double zoom_factor)
 {
 	double	x_math;

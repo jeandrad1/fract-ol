@@ -6,12 +6,18 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:09:48 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/29 12:27:23 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 12:47:52 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
+// Function to zoom in or out
+// This function sets constants to zoom in or out
+// in the middle of the image
+// Zoom factor is 1.5
+// It will zoom in if the mouse wheel is down
+// It will zoom out if the mouse wheel is up
 void	handle_mouse(double xdelta, double ydelta, void *param)
 {
 	t_fractol	*fractol;

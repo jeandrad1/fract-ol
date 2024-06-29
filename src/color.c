@@ -6,17 +6,21 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:12 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:23:21 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 13:05:49 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
+// Function to get the color
+// It receives the red, green, blue and alpha values
+// It returns the color in hexadecimal
 static int	get_rgba(int r, int g, int b, int a)
 {
 	return (r << 24 | g << 16 | b << 8 | a);
 }
 
+// Function to get the absolute value
 static int	absolute(int a)
 {
 	if (a < 0)
@@ -24,6 +28,10 @@ static int	absolute(int a)
 	return (a);
 }
 
+// Function to set the upper values of the RGB
+// It sets the red, green and blue values
+// It returns 1 if the hue is less than 60 or 120 or 180
+// It changes the values of the red, green and blue
 static int	set_rgb_upper(t_color_scheme *cs)
 {
 	if (cs->hue < 60)

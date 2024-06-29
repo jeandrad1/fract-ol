@@ -6,12 +6,13 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:09:28 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/23 14:37:23 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 12:35:44 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
+// Function to determine if a character is a space
 static int	is_space(int c)
 {
 	if ((c >= 9 && c <= 13) || c == ' ')
@@ -19,6 +20,7 @@ static int	is_space(int c)
 	return (0);
 }
 
+//Function to skip spaces and check if the number is negative
 static int	skip_space(char *str, int *is_negative)
 {
 	int	i;
@@ -35,6 +37,7 @@ static int	skip_space(char *str, int *is_negative)
 	return (i);
 }
 
+//Function to convert a string to a double
 double	ft_atof(char *str)
 {
 	int		i;

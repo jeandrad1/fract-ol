@@ -6,12 +6,22 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:00 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/24 20:05:45 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 13:00:01 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
+// Main function of the program
+// It initializes the fractol structure
+// It parses the arguments
+// It initializes the image
+// It displays the help message
+// It draws the fractal
+// Catches the mouse and keyboard events with mlx42 functions
+// It loops the mlx42
+// It terminates the mlx42
+// It returns 0
 int	main(int argc, char **argv)
 {
 	t_fractol	fractol;

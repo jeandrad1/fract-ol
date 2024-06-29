@@ -6,12 +6,17 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:10:06 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/23 17:31:52 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 12:55:01 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
+// Function to calculate the Julia set
+// It returns an integer value calculated by the formula
+// Julia set: Z(n+1) = Z(n)^2 + C
+// C = j_cr + j_ci
+// Max iterations: 100
 int	julia_set(t_fractol *f)
 {
 	int		n;

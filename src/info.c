@@ -6,12 +6,14 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:10:24 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/23 15:46:23 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 12:58:52 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
+// Function to display the help message
+// It displays the name of the program and some help information
 void	help_msg(void)
 {
 	ft_printf("\nFractol\n\n");

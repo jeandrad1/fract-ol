@@ -6,12 +6,17 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:06 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/23 14:31:38 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 13:02:40 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
+// Function to draw the fractal
+// It deletes the image
+// It creates a new image
+// It puts the pixel in the image
+// It loops the x and y values
 void	draw_fractal(t_fractol	*f)
 {
 	mlx_delete_image(f->img.mlx, f->img.img);
