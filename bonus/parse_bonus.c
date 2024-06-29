@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:09:38 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/29 13:20:49 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 13:35:32 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,4 +67,3 @@ void	parse_args(int argc, char **argv, t_fractol *fractol)
 		set_fractal(fractol, argc, argv);
 	}
 }
-
