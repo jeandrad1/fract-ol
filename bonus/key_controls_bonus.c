@@ -6,12 +6,16 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:10:00 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:45:38 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 13:23:14 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
+// Function to exit the mlx
+// It deletes the image and closes the window
+// It terminates the mlx
+// It exits with success
 static void	exit_mlx(t_img *img)
 {
 	mlx_delete_image(img->mlx, img->img);
@@ -20,6 +24,10 @@ static void	exit_mlx(t_img *img)
 	exit(EXIT_SUCCESS);
 }
 
+// Function to handle the keyboard
+// It receives the key and the param
+// It handles the ESC key to exit the mlx
+// And the arrow keys to move the fractal with the move function
 void	handle_keyboard(mlx_key_data_t key, void *param)
 {
 	t_fractol	*fractol;

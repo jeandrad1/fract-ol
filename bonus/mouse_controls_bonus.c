@@ -6,12 +6,15 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:09:48 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:46:12 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 13:21:19 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
+// Function to handle the mouse
+// It uses mlx functions to get the mouse position
+// It zooms in or out depending on the mouse wheel and the mouse position
 void	handle_mouse(double xdelta, double ydelta, void *param)
 {
 	t_fractol	*fractol;

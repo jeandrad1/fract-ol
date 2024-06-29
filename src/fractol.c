@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:00 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/29 13:00:01 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 13:27:51 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,5 @@ int	main(int argc, char **argv)
 	mlx_key_hook(img.mlx, &handle_keyboard, &fractol);
 	mlx_loop(fractol.img.mlx);
 	mlx_terminate(fractol.img.mlx);
-	return (0);
+	return (EXIT_FAILURE);
 }

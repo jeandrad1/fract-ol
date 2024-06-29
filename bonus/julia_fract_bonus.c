@@ -6,12 +6,16 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:10:06 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:43:47 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 13:23:33 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
+// Function to set the julia fractal
+// The formula is Z = Z^2 + C
+// C is a constant
+// C = f->j_cr + f->j_ci
 int	julia_set(t_fractol *f)
 {
 	int		n;

@@ -6,12 +6,13 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:19 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:43:27 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 13:31:48 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
+// Function to reset the color scheme
 static void	reset(t_color_scheme *cs)
 {
 	cs->contrast = 100;
@@ -19,6 +20,8 @@ static void	reset(t_color_scheme *cs)
 	cs->palette = -1;
 }
 
+// Function to shift the color scheme
+// It changes the contrast and the shift
 int	shift_color(t_color_scheme *cs)
 {
 	if (cs->palette == 0)

@@ -6,12 +6,15 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:25 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:43:19 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 13:34:44 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
+// Function to zoom in or out
+// It changes the min and max values of the real and imaginary axis
+// It uses a zoom factor and coordinates to zoom in or out
 void	zoom(t_fractol *fractol, int x, int y, double zoom_factor)
 {
 	double	x_math;
@@ -31,6 +34,9 @@ void	zoom(t_fractol *fractol, int x, int y, double zoom_factor)
 	fractol->max_i = fractol->min_i + new_y_range;
 }
 
+// Function to move the fractal
+// It changes the center of the fractal
+// It uses a distance and a direction to move the fractal
 void	move(t_fractol *f, double distance, char direction)
 {
 	double	center_r;

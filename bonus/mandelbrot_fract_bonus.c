@@ -6,12 +6,16 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/15 12:54:06 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:46:08 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 13:22:10 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
+// Function to set the mandelbrot fractal
+// The formula is Z = Z^2 + Z(0)
+// Z(0) = 0
+// Max iterations = 100
 int	mandelbrot_set(t_fractol *f)
 {
 	int		n;

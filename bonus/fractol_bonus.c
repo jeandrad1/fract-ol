@@ -6,12 +6,20 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:00 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/24 18:17:18 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 13:27:38 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
+// Main function of the program
+// It initializes the fractol struct and the img struct
+// It parses the arguments and checks if they are valid
+// It draws the fractal
+// It sets the hooks for the mouse and keyboard
+// It loops the mlx
+// It terminates the mlx
+// It returns EXIT_SUCCESS
 int	main(int argc, char **argv)
 {
 	t_fractol	fractol;

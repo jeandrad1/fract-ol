@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:10:39 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/23 18:03:18 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 13:11:37 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@
 #  define MAX_ITERATIONS 100
 # endif
 
+// Error codes
 enum	e_error
 {
 	NOTHING = 0,
@@ -42,6 +43,7 @@ enum	e_error
 	MLX_FAIL = 2
 };
 
+// Color schemes
 typedef struct s_color_scheme
 {
 	int	shift;
@@ -61,12 +63,14 @@ typedef struct s_color_scheme
 	int	palette;
 }	t_color_scheme;
 
+//MLX42 image
 typedef struct s_img
 {
 	mlx_t		*mlx;
 	mlx_image_t	*img;
 }	t_img;
 
+// Fractol structure
 typedef struct s_fractol
 {
 	t_img			img;

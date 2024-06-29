@@ -6,17 +6,20 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/08 11:11:12 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:43:24 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/29 13:33:44 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
+// Function to get the color of the fractal
+// It gets green, red, blue and alpha values
 static int	get_rgba(int r, int g, int b, int a)
 {
 	return (r << 24 | g << 16 | b << 8 | a);
 }
 
+// Function to get the absolute value of a number
 static int	absolute(int a)
 {
 	if (a < 0)
@@ -24,6 +27,9 @@ static int	absolute(int a)
 	return (a);
 }
 
+// Function to set the upper part of the RGB
+// It sets the red, green and blue values
+// It changes the values depending on the hue
 static int	set_rgb_upper(t_color_scheme *cs)
 {
 	if (cs->hue < 60)
@@ -50,6 +56,9 @@ static int	set_rgb_upper(t_color_scheme *cs)
 	return (0);
 }
 
+// Function to set the RGB values
+// It sets the red, green and blue values
+// It changes the values depending on the hue
 static void	set_rgb(t_color_scheme *cs)
 {
 	if (set_rgb_upper(cs))
@@ -74,6 +83,10 @@ static void	set_rgb(t_color_scheme *cs)
 	}
 }
 
+// Function to get the psychedelic color
+// It gets the hue, saturation and brightness
+// It gets the red, green and blue values
+// It changes the values to get the psychedelic color
 int	get_psychedelic_color(t_fractol *f)
 {
 	if (f->n == MAX_ITERATIONS)
