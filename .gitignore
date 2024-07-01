@@ -1,1 +1,9 @@
 a.out
+*.out
+*.o
+fractol
+*.a
+fractol_bonus
+.vscode
+leaks
+outfile

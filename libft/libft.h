@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 11:24:09 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/03/30 10:25:04 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/06/22 11:25:53 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
 
 typedef struct s_list
 {
@@ -63,5 +64,14 @@ int					ft_strlen_gnl(char *s);
 char				*ft_strjoin_gnl(char *s, char c);
 char				*ft_read_line_gnl(int fd, char *dst);
 char				*ft_get_next_line_gnl(int fd);
+
+int					ft_printf(const char *format, ...);
+int					ft_print_hex_mayus(unsigned int n);
+int					ft_putchar(char c);
+int					ft_print_str(char *str);
+int					ft_print_unsigned_int(unsigned int n);
+int					ft_print_ptr(unsigned long long ptr);
+int					ft_print_int(int n);
+int					ft_print_hex(unsigned int n);
 
 #endif

@@ -1,0 +1,33 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   info.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/06/08 11:10:24 by jeandrad          #+#    #+#             */
+/*   Updated: 2024/06/29 13:42:45 by jeandrad         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../includes/fractol.h"
+
+// Function to display the help message
+// It displays the name of the program and some help information
+void	help_msg(void)
+{
+	ft_printf("\nFractol\n\n");
+	ft_printf("Fractals avaliable:\n");
+	ft_printf("Julia\n");
+	ft_printf("Mandelbrot\n");
+	ft_printf("\n\n");
+	ft_printf("Usage example:\t./fractol <type>\n\t\t");
+	ft_printf("\nFor Julia, values must be between");
+	ft_printf(" -2.0 and 2.0\n");
+	ft_printf("Interesting examples:\t");
+	ft_printf("./fractol Julia\n\t\t./fractol Julia 0.285 0.01\n");
+	ft_printf("\t\t./fractol Julia -0.4 0.6\n");
+	ft_printf("\t\t./fractol Julia -1.476 0.0\n");
+	ft_printf("\t\t./fractol Julia 0.3 -0.01\n\n");
+
+}

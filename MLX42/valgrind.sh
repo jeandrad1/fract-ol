@@ -1,0 +1,1 @@
+valgrind --leak-check=full --show-leak-kinds=all --suppressions=MLX42/suppression.supp ./fractol Mandelbrot

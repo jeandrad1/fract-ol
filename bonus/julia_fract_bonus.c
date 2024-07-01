@@ -1,35 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   julia_fract_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/27 13:06:02 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:24:22 by jeandrad         ###   ########.fr       */
+/*   Created: 2024/06/08 11:10:06 by jeandrad          #+#    #+#             */
+/*   Updated: 2024/06/29 13:23:33 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/fractol.h"
 
-int	ft_isdigit(int c)
+// Function to set the julia fractal
+// The formula is Z = Z^2 + C
+// C is a constant
+// C = f->j_cr + f->j_ci
+int	julia_set(t_fractol *f)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	else
-		return (0);
-}
-/*
-#include <stdio.h>
-#include <ctype.h>
-int main(){
-	int i = 0;
-	while (i <253)
+	int		n;
+	double	temp;
+
+	n = 0;
+	while (n < MAX_ITERATIONS)
 	{
-		printf("ft_isdigit: %i\t",ft_isdigit(i));
-		printf("isdigit: %i\n", isdigit(i));
-		i++;
+		if ((f->pi * f->pi + f->pr * f->pr) > 4.0)
+			break ;
+		temp = 2 * f->pr * f->pi + f->j_ci;
+		f->pr = f->pr * f->pr - f->pi * f->pi + f->j_cr;
+		f->pi = temp;
+		n++;
 	}
-	return (0);
+	return (n);
 }
-*/

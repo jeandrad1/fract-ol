@@ -1,35 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_print_hex.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/27 13:06:02 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:24:22 by jeandrad         ###   ########.fr       */
+/*   Created: 2024/01/04 16:33:29 by jeandrad          #+#    #+#             */
+/*   Updated: 2024/06/22 11:24:48 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+int	ft_print_hex(unsigned int n)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	else
-		return (0);
+	char	*hex;
+	int		i;
+	int		count;
+
+	hex = "0123456789abcdef";
+	i = 0;
+	count = 0;
+	if (n >= 16)
+		count += ft_print_hex(n / 16);
+	ft_putchar(hex[n % 16]);
+	count++;
+	return (count);
 }
-/*
-#include <stdio.h>
-#include <ctype.h>
-int main(){
-	int i = 0;
-	while (i <253)
-	{
-		printf("ft_isdigit: %i\t",ft_isdigit(i));
-		printf("isdigit: %i\n", isdigit(i));
-		i++;
-	}
-	return (0);
-}
-*/

@@ -1,35 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_print_int.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/27 13:06:02 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/06/22 11:24:22 by jeandrad         ###   ########.fr       */
+/*   Created: 2024/01/04 16:34:21 by jeandrad          #+#    #+#             */
+/*   Updated: 2024/06/22 11:24:51 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+int	ft_print_int(int n)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	else
-		return (0);
-}
-/*
-#include <stdio.h>
-#include <ctype.h>
-int main(){
-	int i = 0;
-	while (i <253)
+	long int	nb;
+	int			count;
+
+	count = 0;
+	nb = n;
+	if (nb < 0)
 	{
-		printf("ft_isdigit: %i\t",ft_isdigit(i));
-		printf("isdigit: %i\n", isdigit(i));
-		i++;
+		ft_putchar('-');
+		nb = -nb;
+		count++;
 	}
-	return (0);
+	if (nb >= 10)
+	{
+		ft_print_int(nb / 10);
+		ft_print_int(nb % 10);
+	}
+	else
+		ft_putchar(nb + '0');
+	return (count);
 }
-*/
