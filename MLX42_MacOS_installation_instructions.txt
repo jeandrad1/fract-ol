@@ -1,19 +1,17 @@
-Primero en sgoinfre copiar la carpeta MLX42 en la que queramos y ejecutar:
+First you have to copy the MLX42 folder in sgoinfre and execute:
 
 rm -rf $HOME/.brew && git clone --depth=1 https://github.com/Homebrew/brew $HOME/.brew && echo 'export PATH=$HOME/.brew/bin:$PATH' >> $HOME/.zshrc && source $HOME/.zshrc && brew update
 
-Segundo, cerrar terminal y volver a abrir para ejecutar:
+Second you have to close the terminal and open it again to execute:
 
 curl -fsSL https://raw.githubusercontent.com/docgloucester/42homebrew_sgoinfre/master/install.sh | zsh
 
-Luego por ultimo volver a cerrar y abrir la terminal y ejecutar:
+Then you must close and open the terminal again and execute:
 
 brew install glfw
 
-Ahora ya esta instalado MLX42.
+Now the MLX42 library is installed and you just have to do a "make" in the MLX42 folder. 
 
-Ahora solo hay que hacer make en la carpeta MLX42.
-
-Usar el main.c de prueba del github con:
+You can use the testing main.c in MLX42 to check if it works.
 
 gcc main.c ./MLX42/libmlx42.a -framework Cocoa -framework OpenGL -framework IOKit -Iinclude -lglfw -L"/Users/jeandrad/.brew/opt/glfw/lib/"
